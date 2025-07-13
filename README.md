@@ -90,7 +90,7 @@ This is the final deployable GUI application.
 
 ---
 
-## Future Work
+## 🔮 Future Work
 
 * **Expand Vocabulary**: Add more gesture classes.
 * **Mobile App**: iOS/Android deployment for accessibility.
