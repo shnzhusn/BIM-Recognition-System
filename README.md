@@ -84,10 +84,9 @@ This is the final deployable GUI application.
 * GRU achieved **97.33% accuracy** on unseen test data.
 * Stable training curve, no signs of overfitting.
 
-<p align="center">
-  <img src="https://path/to/your/training_loss_plot.png" width="400" alt="Training Curve">
-  <img src="https://path/to/your/confusion_matrix.png" width="400" alt="Confusion Matrix">
-</p>
+![Training Curves](images/training-curve.png)
+
+![Confusion Matrices](images/confusion-matrix.png)
 
 ---
 
