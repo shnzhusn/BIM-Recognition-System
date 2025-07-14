@@ -3,6 +3,8 @@
 ## 📖 Overview
 This project is a real-time Malaysian Sign Language (BIM) to text translator. It leverages computer vision and deep learning to bridge the communication gap between the deaf/hard-of-hearing community and non-signers in Malaysia.
 
+The custom dataset consists of 15 dynamic BIM gestures, with 150 video samples per gesture, totaling 2,250 labeled sequences. All data was self-recorded and annotated based on the Malaysian Sign Language (BIM) SignBank.
+
 Using a standard webcam, the system captures a user's **dynamic gestures** and translates them into text. Developed as a Final Year Project, this system focuses on being practical, low-cost, and accessible.
 
 ---
@@ -63,6 +65,7 @@ This is the final deployable GUI application.
 
 * **Feature Extraction**: MediaPipe Holistic generates 1662 keypoints per frame (pose + face + hands).
 * **Sequence**: Each gesture is represented by a sequence of 30 frames.
+* **Dataset Split**: The dataset was split into 80% training, 10% validation, and 10% testing.
 
 ### 📊 Model Comparison
 
@@ -82,7 +85,10 @@ This is the final deployable GUI application.
 ### ✅ Model Evaluation
 
 * GRU achieved **97.33% accuracy** on unseen test data.
+* This model achieved a weighted average F1-score of **0.98**.
 * Stable training curve, no signs of overfitting.
+
+![Classification Report](images/classification-report-gru.png)
 
 ![Training Curves](images/training-curve.png)
 
